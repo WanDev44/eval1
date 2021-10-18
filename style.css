@@ -25,13 +25,21 @@ body{
     width: 100%;
 }
 
+
+
 .nav-container{
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     position: fixed;
     z-index: 10;
     background-color: whitesmoke;
 }
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
 
 .logo {
     width: 200px;
@@ -72,7 +80,7 @@ h1 {
     border: 2px solid white;
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: 5%;
     border-radius: 50px;
     transform: translate(-50%, -100%);
     cursor: pointer;
@@ -321,6 +329,11 @@ footer a:hover{
     cursor: pointer;
 }
 
+.scroll-up:hover{
+    border: 3px solid rgb(10, 1, 61);
+    transition: 0.5s ease-in-out;
+}
+
 .scroll-up p{
     font-size: 8px;
     transform: translate(0%, 110%);
@@ -496,4 +509,35 @@ footer p{
         bottom: 70px;
     }
     
+}
+
+@media screen and (max-width: 770px){
+    
+    h1{
+        margin-top: 75px;
+    }
+
+    #section-1{
+        height: 250px;
+    }
+
+    .background-1 {
+        height: 250px;
+    }
+
+    .container-main{
+        height: 250px;
+    }
+
+    .scroll-down{
+        transform: translate(-50%, 0%) scale(0.9);
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    
+    .scroll-down{
+        transform: translate(-50%, 10%) scale(0.8);
+    }
 }
