@@ -64,6 +64,12 @@ body{
     padding: 20px;
 }
 
+.container-main:hover{
+    background-color: rgba(0, 13, 85, 0.678);
+    transition: 1s ease-in-out;
+}
+
+
 h1 {
     width: 100%;
     color: whitesmoke;
